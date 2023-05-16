@@ -1,0 +1,57 @@
+
+.name {
+    width: 6.3em;
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 100px;
+    color: rgb(211, 171, 236);
+    z-index: 10;
+    font-weight: normal;
+    font-family: 'JuraLight';
+    white-space: nowrap;
+    border-right: 2px solid rgb(255, 255, 255);
+    animation: printed-text 1.5s steps(11),
+            flashin-border .8s step-start infinite;
+}
+
+.about {
+    margin: 50px 0 0 0;
+    width: 7.2em;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 100px;
+    font-weight: normal;
+    color: rgb(211, 171, 236);
+    z-index: 10;
+    font-family: 'JuraLight';
+    white-space: nowrap;
+    border-right: 2px solid rgb(255, 255, 255);
+    animation: printed-text 1.5s steps(13),
+            flashin-border .8s step-start infinite;
+}
+
+
+@keyframes flashin-border {
+    0% {
+        border-color: rgb(255, 255, 255);
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes printed-text {
+    from {
+        width: 0%;
+    }
+}

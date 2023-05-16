@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'saira';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("./saira-thin.woff") format("woff"),
+        url("./saira-thin.woff2") format("woff2")
+}
+
+@font-face {
+	font-family: "JuraLight";
+    font-weight: normal;
+	font-style: normal;
+	src: 
+		
+		url('./juralight.ttf') format("truetype"), /* Safari, Android, iOS */
+		url("./juralight.woff") format("woff"), /* Modern Browsers */
+		url("./juralight.woff2") format("woff2"); /* Modern Browsers */
+	
+}
+

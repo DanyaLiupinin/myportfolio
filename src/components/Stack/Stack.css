@@ -1,0 +1,52 @@
+.runningLine {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.runningLine__container {
+    width: 100%;
+    animation: marquee-text 15s linear infinite;
+}
+
+.runningLine__text {
+    text-align: center;
+    font-size: 30px;
+}
+
+@keyframes marquee-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+
+.skills {
+    display: flex;
+    margin: 0 50px;
+}
+
+.skill {
+    width: 100px;
+    height: 50px;
+    outline: 1px solid blue;
+}
