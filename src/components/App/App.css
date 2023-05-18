@@ -4,7 +4,12 @@ body {
   background-color: black;
 }
 
+button {
+  font-family: 'JuraLight'; 
+}
+
 .app {
   position: relative;
 }
+
 

@@ -6,39 +6,28 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
-    margin: 0 50px;
-    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-between;
     padding-top: 100px;
     background-color: black;
     overflow: hidden;
     padding-bottom: 50px;
     box-sizing: border-box;
+    max-width: 1140px;
   }
   
-  .block {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-  }
 
-  .block::after {
-    content: 'тык';
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    margin: 30% 0;
-    font-size: 50px;
-  }
-  
+
 
   
   .project {
-    width: 300px;
+    width: 30%;
     height: 400px;
-    outline: 1px solid white;
+    border: 1px solid white;
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    box-sizing: border-box;
   }
 
   .project__image {

@@ -1,0 +1,28 @@
+.header {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__container {
+    
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header__link {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    background-color: unset;
+    border: none;
+}

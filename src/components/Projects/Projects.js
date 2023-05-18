@@ -1,11 +1,13 @@
-import './Projects.css'
+import { forwardRef } from 'react'
 
+import './Projects.css'
 
 import { motion } from "framer-motion"
 
 import mesto from '../../images/mesto.png'
 
-const Projects = () => {
+
+const Projects = ({projectsRef}) => {
 
 
     const textAnimation = {
@@ -25,6 +27,7 @@ const Projects = () => {
     return (
 
         <motion.section
+            ref={projectsRef}
             initial="hidden"
             whileInView='visible'
             viewport={{ amount: 0.2, once: true }}
@@ -109,4 +112,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default forwardRef (Projects)

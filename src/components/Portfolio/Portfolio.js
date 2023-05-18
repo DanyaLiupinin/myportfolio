@@ -2,11 +2,13 @@ import './Portfolio.css'
 
 import Projects from '../Projects/Projects'
 
-const Portfolio = () => {
+const Portfolio = ({projectsRef}) => {
 
     return (
         <div>
-          <Projects />
+          <Projects
+            projectsRef={projectsRef}
+          />
         </div>
     )
 }
