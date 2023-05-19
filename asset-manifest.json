@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myportfolio-react/static/css/main.71176d97.css",
-    "main.js": "/myportfolio-react/static/js/main.e01abe7f.js",
+    "main.css": "/myportfolio-react/static/css/main.06de3122.css",
+    "main.js": "/myportfolio-react/static/js/main.0f393ece.js",
     "static/media/back.gif": "/myportfolio-react/static/media/back.8cf8dd9dbc4594f9b7de.gif",
     "static/media/mesto.png": "/myportfolio-react/static/media/mesto.aa8f04bf3ca08a59bb74.png",
     "static/media/juralight.ttf": "/myportfolio-react/static/media/juralight.1325bc12bfd559d655e7.ttf",
@@ -26,11 +26,12 @@
     "index.html": "/myportfolio-react/index.html",
     "static/media/ts.svg": "/myportfolio-react/static/media/ts.f20748caf2dac55710ddeed71de0bac4.svg",
     "static/media/npm.svg": "/myportfolio-react/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
-    "main.71176d97.css.map": "/myportfolio-react/static/css/main.71176d97.css.map",
-    "main.e01abe7f.js.map": "/myportfolio-react/static/js/main.e01abe7f.js.map"
+    "static/media/close-button.svg": "/myportfolio-react/static/media/close-button.039f1f5203f653b4bacde5e34ee2810b.svg",
+    "main.06de3122.css.map": "/myportfolio-react/static/css/main.06de3122.css.map",
+    "main.0f393ece.js.map": "/myportfolio-react/static/js/main.0f393ece.js.map"
   },
   "entrypoints": [
-    "static/css/main.71176d97.css",
-    "static/js/main.e01abe7f.js"
+    "static/css/main.06de3122.css",
+    "static/js/main.0f393ece.js"
   ]
 }
