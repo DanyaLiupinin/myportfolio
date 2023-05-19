@@ -4,10 +4,12 @@ import './Projects.css'
 
 import { motion } from "framer-motion"
 
+import projects from '../../utils/constants'
+
 import mesto from '../../images/mesto.png'
 
 
-const Projects = ({projectsRef}) => {
+const Projects = ({ projectsRef, onClickProject }) => {
 
 
     const textAnimation = {
@@ -34,82 +36,32 @@ const Projects = ({projectsRef}) => {
             className='projects'
         >
 
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={2}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
+            <h3 className='projects__title'>Projects</h3>
 
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={4}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
+            <div className='projects__projects'>
 
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={6}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
+                {
+                    projects.map((project) => {
+                        return (
+                            <motion.div className='project'
+                                variants={textAnimation}
+                                custom={project.id * 1.2}
+                                onClick={() => onClickProject(project)}
+                                key={project.id}
+                            >
+                                <img className='project__image' src={project.images[0]} alt={`projects ${project.title}`}></img>
+                                <div className='project__image-hover'></div>
+                                <h3 className='project__title'>{project.title}</h3>
+                            </motion.div>
+                        )
+                    })
+                }
 
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={8}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
-
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={2}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
-
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={4}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
-
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={6}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
-
-            <motion.div className='project'
-                variants={textAnimation}
-                custom={8}
-            >
-                <img className='project__image' src={mesto} alt='...'></img>
-                <div className='project__image-hover'></div>
-                <h3 className='project__title'>mesto</h3>
-            </motion.div>
-
+            </div>
 
         </motion.section>
 
     )
 }
 
-export default forwardRef (Projects)
+export default forwardRef(Projects)

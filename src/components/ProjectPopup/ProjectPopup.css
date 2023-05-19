@@ -1,0 +1,68 @@
+.projectPopup {
+    background-color: #fffffff5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.projectPopup__info {
+    width: 50%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectPopup__title {
+    font-size: 50px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.projectPopup__description {
+    margin: 30px 0 0;
+    font-size: 25px;
+}
+
+.projectPopup__skills {
+    display: flex;
+    margin: 30px 0 0;
+    align-items: center;
+    font-size: 25px;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 10px;
+}
+
+.projectPopup__skill {
+    margin: 0;
+}
+
+.projectPopup__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.projectPopup__button {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    height: 30px;
+    border-radius: 3px;
+}

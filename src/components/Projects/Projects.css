@@ -2,23 +2,32 @@
   
   
   .projects {  
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding-top: 100px;
+    
+    margin: 100px auto 0;
     background-color: black;
-    overflow: hidden;
     padding-bottom: 50px;
     box-sizing: border-box;
     max-width: 1140px;
   }
   
 
+.projects__title {
+  color: white;
+  margin: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
 
-
+.projects__projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 50px auto 0;
+}
   
   .project {
     width: 30%;

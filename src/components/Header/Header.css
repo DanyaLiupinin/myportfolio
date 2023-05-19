@@ -25,4 +25,10 @@
     font-size: 35px;
     background-color: unset;
     border: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.header__link:hover {
+    opacity: .7;
 }

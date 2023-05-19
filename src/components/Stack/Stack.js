@@ -22,7 +22,7 @@ import photoshop from '../../images/photoshop.svg'
 
 import { motion } from "framer-motion"
 
-const Stack = ({stackRef}) => {
+const Stack = ({ stackRef }) => {
 
 
     const textAnimation = {
@@ -41,16 +41,10 @@ const Stack = ({stackRef}) => {
 
 
     return (
-        <>
-            {/*
-            <div className="runningLine">
-                <div className='runningLine__container'>
-                    <p className='runningLine__text'>My stack || My stack || My stack || My stack || My stack || My stack || My stack </p>
-                </div>
-            </div>
-    */}
 
-            <h3 className='stack__title' ref={stackRef}>Stack</h3>
+        <div className='stack' ref={stackRef}>
+
+            <h3 className='stack__title'>Stack</h3>
 
             <motion.div className='skills'
                 initial="hidden"
@@ -62,10 +56,6 @@ const Stack = ({stackRef}) => {
                     custom={2}
                 >
                     <div className='skill__wrapper'>
-                        {/* здесь скиллы, разобраться с отступами между карточками и от краев */}
-                        { /* возможно поставить проектам автоматическую высоту и джастифай спэйс битвин */}
-                        { /* так же добавить фильтрацию по проектам по стеку */}
-                        { /* внизу контакты*/}
                         <img className='skill__image' src={js} alt='js'></img>
 
                     </div>
@@ -283,8 +273,10 @@ const Stack = ({stackRef}) => {
 
 
             </motion.div>
-        </>
+
+        </div>
+
     )
 }
 
-export default forwardRef (Stack)
+export default forwardRef(Stack)
