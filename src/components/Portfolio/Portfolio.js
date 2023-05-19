@@ -13,6 +13,10 @@ const Portfolio = ({projectsRef}) => {
     setActiveProject(projectData)
   }
 
+  const onCloseProject = () => {
+    setActiveProject(null)
+  }
+
     return (
         <div className='portfolio'>
           <Projects
@@ -21,6 +25,7 @@ const Portfolio = ({projectsRef}) => {
           />
           <ProjectPopup
             activeProject={activeProject}
+            onCloseProject={onCloseProject}
           />
         </div>
     )

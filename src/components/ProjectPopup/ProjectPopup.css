@@ -1,3 +1,37 @@
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms ease;
+}
+
+.alert-exit {
+    opacity: 1;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(19, 10, 10, 0.734);
+    z-index: 1;
+}
+
 .projectPopup {
     /*background-color: white;*/
     background-color: black;
@@ -16,6 +50,7 @@
     border-radius: 10px;
     overflow: hidden;
     outline: 2px solid white;
+    transition: .6s;
 }
 
 .projectPopup::after {
@@ -29,7 +64,31 @@
     position: absolute;
     z-index: -1;
     opacity: .5;
-    scale: 1.1;
+    scale: 1.2;
+    width: 50%;
+}
+
+.projectPopup__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: unset;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+    outline: 2px solid white;
+    border-radius: 5px;
+}
+
+.projectPopup__close-button:hover {
+    opacity: .7;
+}
+
+.projectPopup__close-button-image {
+    width: 100%;
+    height: 100%;
 }
 
 .projectPopup__info {
@@ -62,6 +121,9 @@
 
 .projectPopup__skill {
     margin: 0;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
 }
 
 .projectPopup__buttons {
@@ -84,4 +146,11 @@
     height: 30px;
     border-radius: 3px;
     outline: 1px solid white;
+    transition: .3s;
+}
+
+.projectPopup__button:hover {
+    opacity: .8;
+    background-color: white;
+    color: black;
 }
