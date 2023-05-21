@@ -243,11 +243,20 @@
     .projectPopup__button {
         font-size: 18px;
     }
+
+
 }
 
 @media (max-width: 450px) {
     .projectPopup__skills {
         margin-left: 10px;
+    }
+
+    .projectPopup__close-button {
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        right: 10px;
     }
 }
 
