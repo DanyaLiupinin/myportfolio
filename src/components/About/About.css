@@ -1,6 +1,6 @@
 .about {
     max-width: 1140px;
-    width: 100%;
+    width: fit-content;
     margin: 0 auto;
     position: absolute;
     bottom: 15%;

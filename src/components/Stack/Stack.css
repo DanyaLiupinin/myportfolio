@@ -22,8 +22,6 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
-
-    
 }
 
 .skill {
@@ -47,7 +45,6 @@
 .skill__image_type_three {
     background-color: rgb(177, 91, 177);
 }
-
 
 .skill__name-container {
     display: flex;
@@ -81,7 +78,6 @@
     height: 100%;
     z-index: 5;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6)); 
-    /*background: rgba(255, 255, 255, 0.6);*/
     filter: blur(8px);
     transform: translateX(-60px) skew(-45deg);
     animation: move 7s 1s infinite;

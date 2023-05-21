@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'JuraLight'; 
   background-color: black;
+  overflow-x: hidden;
 }
 
 button {
