@@ -32,7 +32,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
             ref={projectsRef}
             initial="hidden"
             whileInView='visible'
-            viewport={{ amount: 0.2, once: true }}
+            viewport={{ amount: 0.1, once: true }}
             className='projects'
         >
 
@@ -45,7 +45,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
                         return (
                             <motion.div className='project'
                                 variants={textAnimation}
-                                custom={project.id * 1.2}
+                                custom={project.id}
                                 onClick={() => onClickProject(project)}
                                 key={project.id}
                             >

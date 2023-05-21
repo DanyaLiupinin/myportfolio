@@ -1,6 +1,7 @@
 
 .stack {
-    margin: 100px inherit inherit;
+    margin-top: inherit;
+    overflow: hidden;
 }
 
 .stack__title {
@@ -19,7 +20,7 @@
     max-width: 1140px;
     margin: 50px auto 0;
     padding-bottom: 100px;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -96,3 +97,14 @@
     }
 }
 
+
+@media (max-width: 880px) {
+    .stack__title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .skills {
+        margin-top: 80px;
+    }
+}
