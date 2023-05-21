@@ -12,4 +12,19 @@ button {
   position: relative;
 }
 
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 
+section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1240px) {
+  section {
+    margin: 0 50px;
+  }
+}

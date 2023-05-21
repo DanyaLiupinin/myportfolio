@@ -18,7 +18,7 @@ const Portfolio = ({projectsRef}) => {
   }
 
     return (
-        <div className='portfolio'>
+        <section className='portfolio'>
           <Projects
             projectsRef={projectsRef}
             onClickProject={onClickProject}
@@ -27,7 +27,7 @@ const Portfolio = ({projectsRef}) => {
             activeProject={activeProject}
             onCloseProject={onCloseProject}
           />
-        </div>
+        </section>
     )
 }
 

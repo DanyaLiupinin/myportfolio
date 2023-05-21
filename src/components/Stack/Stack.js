@@ -42,7 +42,7 @@ const Stack = ({ stackRef }) => {
 
     return (
 
-        <div className='stack' ref={stackRef}>
+        <section className='stack' ref={stackRef}>
 
             <h3 className='stack__title'>Stack</h3>
 
@@ -60,7 +60,7 @@ const Stack = ({ stackRef }) => {
 
                     </div>
                     <div className='skill__name-container'>
-                        <p className='skill__name'>javascript</p>
+                        <p className='skill__name'>java script</p>
                     </div>
 
                 </motion.div>
@@ -145,7 +145,7 @@ const Stack = ({ stackRef }) => {
                         <img className='skill__image' src={ts} alt='js'></img>
                     </div>
                     <div className='skill__name-container'>
-                        <p className='skill__name'>typeScript</p>
+                        <p className='skill__name'>type Script</p>
                     </div>
                 </motion.div>
 
@@ -154,7 +154,7 @@ const Stack = ({ stackRef }) => {
                     custom={6}
                 >
                     <div className='skill__wrapper'>
-                        <img className='skill__image' src={rest} alt='express'></img>
+                        <img className='skill__image' src={rest} alt='rest api icon'></img>
                     </div>
                     <div className='skill__name-container'>
                         <p className='skill__name'>rest API</p>
@@ -181,7 +181,7 @@ const Stack = ({ stackRef }) => {
                         <img className='skill__image' src={express} alt='express'></img>
                     </div>
                     <div className='skill__name-container'>
-                        <p className='skill__name'>express.js</p>
+                        <p className='skill__name'>express js</p>
                     </div>
                 </motion.div>
 
@@ -274,7 +274,7 @@ const Stack = ({ stackRef }) => {
 
             </motion.div>
 
-        </div>
+        </section>
 
     )
 }

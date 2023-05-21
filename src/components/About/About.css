@@ -1,11 +1,19 @@
+.about {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    z-index: 1;
+}
 
 .name {
     width: 6.3em;
     overflow: hidden;
     margin: 0;
-    position: absolute;
-    top: 12%;
-    left: 5%;
     font-size: 100px;
     color: rgb(211, 171, 236);
     z-index: 10;
@@ -14,16 +22,13 @@
     white-space: nowrap;
     border-right: 2px solid rgb(255, 255, 255);
     animation: printed-text 1.5s steps(11),
-            flashin-border .8s step-start infinite;
+        flashin-border .8s step-start infinite;
 }
 
-.about {
+.profession {
     margin: 0;
     width: 7.2em;
     overflow: hidden;
-    position: absolute;
-    top: 17%;
-    left: 5%;
     font-size: 100px;
     font-weight: normal;
     color: rgb(211, 171, 236);
@@ -32,7 +37,7 @@
     white-space: nowrap;
     border-right: 2px solid rgb(255, 255, 255);
     animation: printed-text 1.5s steps(13),
-            flashin-border .8s step-start infinite;
+        flashin-border .8s step-start infinite;
 }
 
 
@@ -53,5 +58,18 @@
 @keyframes printed-text {
     from {
         width: 0%;
+    }
+}
+
+@media (max-width: 1240px) {
+    .about {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .name, .profession {
+        font-size: 80px;
     }
 }

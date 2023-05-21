@@ -14,15 +14,15 @@ const About = () => {
     }, [])
 
     return (
-        <>
+        <section className="about" >
             <h2 className='name'>Danya Kovan</h2>
             {
                 frontend ?
-                    <h1 className='about'>web developer</h1>
+                    <h1 className='profession'>web developer</h1>
                     :
                     ''
             }
-        </>
+        </section>
     )
 }
 

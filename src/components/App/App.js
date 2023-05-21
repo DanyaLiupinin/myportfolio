@@ -23,8 +23,10 @@ const App = () => {
       <Header
         refs={refs}
       />
+      <div className='main' >
       <About />
       <Globe />
+      </div>
       <Portfolio
         projectsRef={projectsRef}
       />

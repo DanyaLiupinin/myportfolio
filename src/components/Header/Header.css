@@ -9,14 +9,12 @@
 }
 
 .header__container {
-    
     max-width: 1140px;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
 .header__link {
@@ -31,4 +29,11 @@
 
 .header__link:hover {
     opacity: .7;
+}
+
+
+@media (max-width: 1240px) {
+    .header__container {
+        margin: 0 50px;
+    }
 }
