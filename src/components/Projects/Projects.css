@@ -5,7 +5,6 @@
     
     margin: 100px auto 0;
     background-color: black;
-    padding-bottom: 50px;
     box-sizing: border-box;
     max-width: 1140px;
   }
@@ -133,5 +132,9 @@
     .project {
       width: 280px;
       height: 380px;
+    }
+
+    .projects__title {
+      font-size: 40px;
     }
   }
