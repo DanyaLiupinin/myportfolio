@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myportfolio-react/static/css/main.4898dd77.css",
-    "main.js": "/myportfolio-react/static/js/main.83c246c4.js",
+    "main.css": "/myportfolio-react/static/css/main.fb689974.css",
+    "main.js": "/myportfolio-react/static/js/main.875cc92f.js",
     "static/media/back.gif": "/myportfolio-react/static/media/back.33537b2e69814b769a06.gif",
     "static/media/mesto.png": "/myportfolio-react/static/media/mesto.aa8f04bf3ca08a59bb74.png",
     "static/media/juralight.ttf": "/myportfolio-react/static/media/juralight.1325bc12bfd559d655e7.ttf",
@@ -27,11 +27,11 @@
     "static/media/ts.svg": "/myportfolio-react/static/media/ts.f20748caf2dac55710ddeed71de0bac4.svg",
     "static/media/npm.svg": "/myportfolio-react/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "static/media/close-button.svg": "/myportfolio-react/static/media/close-button.039f1f5203f653b4bacde5e34ee2810b.svg",
-    "main.4898dd77.css.map": "/myportfolio-react/static/css/main.4898dd77.css.map",
-    "main.83c246c4.js.map": "/myportfolio-react/static/js/main.83c246c4.js.map"
+    "main.fb689974.css.map": "/myportfolio-react/static/css/main.fb689974.css.map",
+    "main.875cc92f.js.map": "/myportfolio-react/static/js/main.875cc92f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4898dd77.css",
-    "static/js/main.83c246c4.js"
+    "static/css/main.fb689974.css",
+    "static/js/main.875cc92f.js"
   ]
 }
