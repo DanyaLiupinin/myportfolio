@@ -89,3 +89,11 @@
 .imageCarousel__mini-icon_active {
     outline: 2px solid black;
 }
+
+
+@media (max-width: 900px) {
+
+    .imageCarousel {
+        margin: 50px auto 0;
+    }
+}
