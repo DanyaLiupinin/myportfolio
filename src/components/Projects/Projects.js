@@ -6,9 +6,6 @@ import { motion } from "framer-motion"
 
 import projects from '../../utils/constants'
 
-import mesto from '../../images/mesto.png'
-
-
 const Projects = ({ projectsRef, onClickProject }) => {
 
 

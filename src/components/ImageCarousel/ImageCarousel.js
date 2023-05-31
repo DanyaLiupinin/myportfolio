@@ -53,7 +53,7 @@ const ImageCarousel = ({ images }) => {
         } else if (window.screen.width < 470 && window.screen.width > 384) {
             setImageWidth(250)
         } else if (window.screen.width < 384) {
-            setImageWidth(200) }
+            setImageWidth(250) }
 
         window.addEventListener('resize', () => {
             if (window.screen.width > 550) {
@@ -63,7 +63,7 @@ const ImageCarousel = ({ images }) => {
             } else if (window.screen.width < 470 && window.screen.width > 384) {
                 setImageWidth(250)
             } else if (window.screen.width < 384) {
-                setImageWidth(200) }
+                setImageWidth(250) }
         })
     }, [])
 

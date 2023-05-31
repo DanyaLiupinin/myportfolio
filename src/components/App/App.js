@@ -7,6 +7,7 @@ import About from '../About/About'
 import Globe from "../Globe/Globe"
 import Portfolio from '../Portfolio/Portfolio';
 import Stack from '../Stack/Stack'
+import Contacts from '../Contacts/Contacts'
 
 const App = () => {
 
@@ -33,6 +34,9 @@ const App = () => {
       />
       <Stack 
         stackRef={stackRef}
+      />
+      <Contacts 
+        contactRef={contactRef}
       />
 
     </div>
