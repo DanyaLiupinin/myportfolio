@@ -15,7 +15,7 @@ const Contact = ({ image, text, title, link, custom }) => {
             x: 0,
             y: 0,
             opacity: 1,
-            transition: { delay: custom / 20 },
+            transition: { delay: custom / 6 },
         }),
     }
 

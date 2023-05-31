@@ -1,6 +1,8 @@
 import { forwardRef } from 'react'
 import './Contacts.css'
 
+import { motion } from "framer-motion"
+
 import Contact from '../Contact/Contact'
 
 import linkedin from '../../images/linkedin.svg'
@@ -45,28 +47,32 @@ const contacts = [
 const Contacts = ({ contactRef }) => {
 
     return (
-        <section className='contacts'>
+        <motion.section className='contacts'
+            initial="hidden"
+            whileInView='visible'
+            viewport={{ amount: 0.1, once: true }}
+        >
             <h3 className='contacts__title' ref={contactRef}>Contact me</h3>
 
             <div className='contact-container'>
-                
+
                 {
                     contacts &&
                     contacts.map((contact, i) => {
                         return (
                             <Contact
-                            key={contact.title}
-                            title={contact.title}
-                            image={contact.image}
-                            text={contact.text}
-                            link={contact.link}
-                            custom={i / 3}
+                                key={contact.title}
+                                title={contact.title}
+                                image={contact.image}
+                                text={contact.text}
+                                link={contact.link}
+                                custom={i}
                             />
                         )
                     })
                 }
             </div>
-        </section>
+        </motion.section>
     )
 }
 

@@ -8,7 +8,6 @@ import projects from '../../utils/constants'
 
 const Projects = ({ projectsRef, onClickProject }) => {
 
-
     const textAnimation = {
         hidden: {
             x: 100,
@@ -24,7 +23,6 @@ const Projects = ({ projectsRef, onClickProject }) => {
     }
 
     return (
-
         <motion.section
             ref={projectsRef}
             initial="hidden"
@@ -32,11 +30,8 @@ const Projects = ({ projectsRef, onClickProject }) => {
             viewport={{ amount: 0.1, once: true }}
             className='projects'
         >
-
             <h3 className='projects__title'>Projects</h3>
-
             <div className='projects__projects'>
-
                 {
                     projects.map((project) => {
                         return (
@@ -53,11 +48,8 @@ const Projects = ({ projectsRef, onClickProject }) => {
                         )
                     })
                 }
-
             </div>
-
         </motion.section>
-
     )
 }
 

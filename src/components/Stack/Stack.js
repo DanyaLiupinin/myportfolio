@@ -26,8 +26,8 @@ const Stack = ({ stackRef }) => {
 
     const textAnimation = {
         hidden: {
-            x: 100,
-            y: 0,
+            x: 0,
+            y: 100,
             opacity: 0,
         },
         visible: custom => ({
