@@ -1,5 +1,4 @@
 .projects {  
-    
     margin: 100px auto 0;
     background-color: black;
     box-sizing: border-box;
@@ -12,6 +11,7 @@
   margin: 0;
   font-size: 60px;
   font-weight: normal;
+  text-align: center;
 }
 
 .projects__projects {
