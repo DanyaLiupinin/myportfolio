@@ -19,7 +19,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
             x: 0,
             y: 0,
             opacity: 1,
-            transition: { delay: custom * 0.1 },
+            transition: { delay: custom / 4 },
         }),
     }
 

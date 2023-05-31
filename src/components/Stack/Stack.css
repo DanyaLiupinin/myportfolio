@@ -126,3 +126,14 @@
       font-size: 40px;
     }
   }
+
+  @media (max-width: 350px) {
+    .skill {
+        width: 100px;
+    height: 175px;
+    }
+
+    .skill__name {
+        font-size: 20px;
+    }
+  }

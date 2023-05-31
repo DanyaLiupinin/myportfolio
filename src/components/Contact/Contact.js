@@ -7,7 +7,7 @@ const Contact = ({ image, text, title, link, custom }) => {
 
     const textAnimation = {
         hidden: {
-            x: 100,
+            x: 0,
             y: 100,
             opacity: 0,
         },
@@ -15,7 +15,7 @@ const Contact = ({ image, text, title, link, custom }) => {
             x: 0,
             y: 0,
             opacity: 1,
-            transition: { delay: custom * 0.1 },
+            transition: { delay: custom / 20 },
         }),
     }
 
