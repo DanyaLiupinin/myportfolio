@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myportfolio-react/static/css/main.877a74c8.css",
-    "main.js": "/myportfolio-react/static/js/main.5805039d.js",
+    "main.css": "/myportfolio-react/static/css/main.6f1b84f6.css",
+    "main.js": "/myportfolio-react/static/js/main.b4b093b6.js",
     "static/media/back.gif": "/myportfolio-react/static/media/back.33537b2e69814b769a06.gif",
     "static/media/mesto.png": "/myportfolio-react/static/media/mesto.aa8f04bf3ca08a59bb74.png",
     "static/media/juralight.ttf": "/myportfolio-react/static/media/juralight.1325bc12bfd559d655e7.ttf",
@@ -12,8 +12,10 @@
     "static/media/three.png": "/myportfolio-react/static/media/three.f0288c62a39362b5dee9.png",
     "static/media/express.png": "/myportfolio-react/static/media/express.14bef7ddfed77510e0a2.png",
     "static/media/css.png": "/myportfolio-react/static/media/css.80dd7bf1cb24c1c3b1c1.png",
+    "static/media/github-contact.svg": "/myportfolio-react/static/media/github-contact.3ecf27711255ef69c6785f9440457d46.svg",
     "static/media/sass.svg": "/myportfolio-react/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
     "static/media/react.svg": "/myportfolio-react/static/media/react.867e22e5a0394f9e99bb018feec45d06.svg",
+    "static/media/telegram.svg": "/myportfolio-react/static/media/telegram.04cf4804f41145386b50aed7306f8116.svg",
     "static/media/html.svg": "/myportfolio-react/static/media/html.cdf588f58e6818c640e30bf8069c28c0.svg",
     "static/media/figma.svg": "/myportfolio-react/static/media/figma.188fe60fccaeeaa2ceadc85ff275a296.svg",
     "static/media/github.svg": "/myportfolio-react/static/media/github.895050b20cdc3aefa3177ef8508b789b.svg",
@@ -21,17 +23,20 @@
     "static/media/js.svg": "/myportfolio-react/static/media/js.78960278f6971b4f0ff5c5c99776bf95.svg",
     "static/media/photoshop.svg": "/myportfolio-react/static/media/photoshop.ab4a043d850b50210daf0453fccc0240.svg",
     "static/media/redux.svg": "/myportfolio-react/static/media/redux.0a4a6ca2be44339bedb69de15f66d243.svg",
+    "static/media/mail.svg": "/myportfolio-react/static/media/mail.55482be50f516892d19c0bf61f60a83a.svg",
     "static/media/eslint.svg": "/myportfolio-react/static/media/eslint.82dd492e1ec7a63ad85235b93e406863.svg",
     "static/media/webpack.svg": "/myportfolio-react/static/media/webpack.2064de68e0f0042e3cbbda61e8456cbb.svg",
     "index.html": "/myportfolio-react/index.html",
     "static/media/ts.svg": "/myportfolio-react/static/media/ts.f20748caf2dac55710ddeed71de0bac4.svg",
+    "static/media/cvvv.svg": "/myportfolio-react/static/media/cvvv.570282468af75d89ed17f5e21dfe2380.svg",
+    "static/media/linkedin.svg": "/myportfolio-react/static/media/linkedin.e9b8df20d092b20af087c400014ff4c8.svg",
     "static/media/npm.svg": "/myportfolio-react/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "static/media/close-button.svg": "/myportfolio-react/static/media/close-button.039f1f5203f653b4bacde5e34ee2810b.svg",
-    "main.877a74c8.css.map": "/myportfolio-react/static/css/main.877a74c8.css.map",
-    "main.5805039d.js.map": "/myportfolio-react/static/js/main.5805039d.js.map"
+    "main.6f1b84f6.css.map": "/myportfolio-react/static/css/main.6f1b84f6.css.map",
+    "main.b4b093b6.js.map": "/myportfolio-react/static/js/main.b4b093b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.877a74c8.css",
-    "static/js/main.5805039d.js"
+    "static/css/main.6f1b84f6.css",
+    "static/js/main.b4b093b6.js"
   ]
 }
