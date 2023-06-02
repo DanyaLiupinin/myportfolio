@@ -37,7 +37,9 @@ const ProjectPopup = ({ activeProject, onCloseProject }) => {
                     }
                 </div>
                 <div className='projectPopup__buttons'>
-                    <a className='projectPopup__button' target="_blank" rel="noopener noreferrer" href={activeProject.github}>GitHub</a>
+                    <a className={`projectPopup__button ${activeProject.github === 'no' ? 'projectPopup__button_disabled' : ''}`} target="_blank" rel="noopener noreferrer" href={activeProject.github}
+                    disabled={false}
+                    >{`${activeProject.github === 'no' ? 'no github :(' : 'GitHub'}`}</a>
                     <a className='projectPopup__button' target="_blank" rel="noopener noreferrer" href={activeProject.browser}>Website</a>
                 </div>
             </div>

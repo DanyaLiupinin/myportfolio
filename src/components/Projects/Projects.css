@@ -42,7 +42,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    scale: 1.13;
+    /*scale: 1.13;*/
+    filter: contrast(0.95);
   }
 
   .project__image-hover {
@@ -77,6 +78,8 @@
     font-weight: normal;
     opacity: 0;
     transition: .2s ease-in-out;
+
+    text-align: center;
   }
 
    .project:hover .project__title {

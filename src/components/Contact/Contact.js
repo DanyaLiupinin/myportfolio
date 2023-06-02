@@ -21,9 +21,6 @@ const Contact = ({ image, text, title, link, custom }) => {
 
     return (
         <motion.div
-            initial="hidden"
-            whileInView='visible'
-            viewport={{ amount: 0.1, once: true }}
             variants={textAnimation}
             custom={custom}
             className='contact'

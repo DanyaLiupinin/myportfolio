@@ -44,6 +44,20 @@ const contacts = [
     }
 ]
 
+const textAnimation = {
+    hidden: {
+        x: 0,
+        y: 100,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        y: 0,
+        opacity: 1,
+        transition: { delay: custom },
+    }),
+}
+
 const Contacts = ({ contactRef }) => {
 
     return (
@@ -53,7 +67,16 @@ const Contacts = ({ contactRef }) => {
             viewport={{ amount: 0.1, once: true }}
         >
             <h3 className='contacts__title' ref={contactRef}>Contact me</h3>
-
+            <div className='contacts__information'>
+                <motion.p 
+                variants={textAnimation}
+                custom={.3}
+                className='contacts__data'>Current location: <span className='contacts__data-span'> Barcelona, Spain </span> <br /> (work permite since autumn 2023)</motion.p>
+                <motion.p 
+                variants={textAnimation}
+                custom={.7}
+                className='contacts__data'>Status: <span className='contacts__data-span'>open to work</span></motion.p>
+            </div>
             <div className='contact-container'>
 
                 {

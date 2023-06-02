@@ -15,7 +15,6 @@
     text-align: center;
 }
 
-
 .skills {
     display: flex;
     flex-direction: row;
@@ -24,7 +23,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0 10px 50px;
+    padding: 0 10px 100px;
 }
 
 .skill {

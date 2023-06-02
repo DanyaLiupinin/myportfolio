@@ -41,7 +41,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
                                 onClick={() => onClickProject(project)}
                                 key={project.id}
                             >
-                                <img className='project__image' src={project.images[0]} alt={`projects ${project.title}`}></img>
+                                <img className='project__image' src={project.icon} alt={`projects ${project.title}`}></img>
                                 <div className='project__image-hover'></div>
                                 <h3 className='project__title'>{project.title}</h3>
                             </motion.div>
