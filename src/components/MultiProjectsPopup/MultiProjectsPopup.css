@@ -27,7 +27,7 @@
 
 .multiPopup__card-title {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px 0;
     display: flex;
     justify-content: center;
@@ -75,3 +75,30 @@
     color: black;
     outline: 1px solid black;
 }
+
+@media (max-width: 1100px) {
+    .multiPopup__card-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .multiPopup {
+        padding: 50px;
+    }
+ }
+
+@media (max-width: 400px) {
+   .multiPopup__card {
+    height: 160px;
+   }
+   .multiPopup__card-title {
+    font-size: 16px;
+   }
+}
+
+@media (max-width: 350px) {
+    .multiPopup {
+        padding: 40px;
+    }
+ }

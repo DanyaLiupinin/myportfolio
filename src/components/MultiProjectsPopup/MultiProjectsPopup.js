@@ -61,7 +61,7 @@ const MultiProjectPopup = ({ activeProject, onCloseProject }) => {
                         </div>
                         <img src={three} alt='#' className='multiPopup__card-image'></img>
                     </div>
-                    <p className='multiPopup__card-title'>Image slider with beautiful effect</p>
+                    <p className='multiPopup__card-title'>Beautiful image slider</p>
                 </div>
 
                 <div className='multiPopup__card'>
