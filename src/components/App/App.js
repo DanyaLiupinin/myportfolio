@@ -9,6 +9,8 @@ import Portfolio from '../Portfolio/Portfolio';
 import Stack from '../Stack/Stack'
 import Contacts from '../Contacts/Contacts'
 
+import { moviesFetch, mestoFetch } from '../../utils/fetch'
+
 const App = () => {
 
   const projectsRef = useRef(null)
@@ -19,23 +21,28 @@ const App = () => {
     projectsRef, stackRef, contactRef
   }
 
+  useEffect(() => {
+    moviesFetch()
+    mestoFetch()
+  }, [])
+
   return (
     <div className='app'>
-      
+
       <Header
         refs={refs}
       />
       <div className='main' >
-      <About />
-      <Globe />
+        <About />
+        <Globe />
       </div>
       <Portfolio
         projectsRef={projectsRef}
       />
-      <Stack 
+      <Stack
         stackRef={stackRef}
       />
-      <Contacts 
+      <Contacts
         contactRef={contactRef}
       />
 

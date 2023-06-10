@@ -43,7 +43,9 @@ import learn from '../images/learn.png'
 import learn2 from '../images/learn2.png'
 import learn3 from '../images/learn3.png'
 
-const projects = [ // перевести сайты на английский и сделать для эксплорера скрины поинтереснее
+import marathonmain from '../images/marathonmain.png'
+
+const projects = [ // перевести сайты на английский 
     {
         title: 'mesto',
         description: `The project 'Mesto' is a kind of a social network, the main function of which is to share photos and rate photos of other users. Analogue of instagram`,
@@ -53,6 +55,7 @@ const projects = [ // перевести сайты на английский и
         github: 'https://github.com/DanyaLiupinin/react-mesto-api-full',
         browser: 'https://danyaliupinin.github.io/react-mesto-api-full/',
         id: 1,
+        type: 'single',
     },
     {
         title: 'movies explorer',
@@ -63,6 +66,7 @@ const projects = [ // перевести сайты на английский и
         github: 'https://github.com/DanyaLiupinin/movies-explorer-frontend',
         browser: 'https://danyaliupinin.github.io/movies-explorer-frontend',
         id: 2,
+        type: 'single',
     },
     {
         title: 'web developer portfolio',
@@ -73,6 +77,7 @@ const projects = [ // перевести сайты на английский и
         github: 'https://github.com/DanyaLiupinin/myportfolio-react',
         browser: 'https://danyaliupinin.github.io/myportfolio-react/',
         id: 3,
+        type: 'single',
     },
     {
         title: 'partyshaker (in developing)',
@@ -84,7 +89,7 @@ const projects = [ // перевести сайты на английский и
         github: 'no',
         browser: 'https://partyshaker.online/',
         id: 4,
-
+        type: 'single',
     },
     {
         title: 'zamyatysh shop (in developing)',
@@ -95,6 +100,18 @@ const projects = [ // перевести сайты на английский и
         github: 'https://github.com/DanyaLiupinin/zamyatysh',
         browser: 'https://danyaliupinin.github.io/zamyatysh/',
         id: 5,
+        type: 'single',
+    },
+    {
+        title: 'Marathon',
+        description: '',
+        icon: marathonmain,
+        images: [zamyatysh, zamyatysh, zamyatysh],
+        stack: [''],
+        github: [],
+        browser: [],
+        id: 6,
+        type: 'multi'
     },
     {
         title: 'lonely chat',
@@ -104,7 +121,8 @@ const projects = [ // перевести сайты на английский и
         stack: ['React', 'Local storage', 'Session storage'],
         github: 'https://github.com/DanyaLiupinin/chat',
         browser: 'https://danyaliupinin.github.io/chat/',
-        id: 6,
+        id: 7,
+        type: 'single',
     },
     {
         title: 'yandex vacancies',
@@ -114,7 +132,8 @@ const projects = [ // перевести сайты на английский и
         stack: ['JS', 'HTML5', 'CSS3', 'Bulma', 'Css animations'],
         github: 'https://github.com/DanyaLiupinin/yandex-hackathon-justdoit',
         browser: 'https://danyaliupinin.github.io/yandex-hackathon-justdoit/',
-        id: 7,
+        id: 8,
+        type: 'single',
     },
     {
         title: 'russian travel',
@@ -124,7 +143,8 @@ const projects = [ // перевести сайты на английский и
         stack: ['HTML3', 'CSS3', 'Addaptive layout', 'BEM', 'Flex', 'Grid'],
         github: 'https://github.com/DanyaLiupinin/russian-travel',
         browser: 'https://danyaliupinin.github.io/russian-travel/index.html',
-        id: 8,
+        id: 9,
+        type: 'single',
     },
     {
         title: 'how to learn',
@@ -134,7 +154,8 @@ const projects = [ // перевести сайты на английский и
         stack: ['HTML', 'CSS', 'Addaptive', 'BEM', 'Flex', 'Grid'],
         github: 'https://github.com/DanyaLiupinin/how-to-learn',
         browser: 'https://danyaliupinin.github.io/how-to-learn/',
-        id: 9,
+        id: 10,
+        type: 'single',
     },
 
 ]
