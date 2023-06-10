@@ -44,6 +44,11 @@ import learn2 from '../images/learn2.png'
 import learn3 from '../images/learn3.png'
 
 import marathonmain from '../images/marathonmain.png'
+import marathon1 from '../images/apex.png'
+import marathon2 from '../images/todo.png'
+import marathon3 from '../images/anderson.png'
+import marathon4 from '../images/snake.png'
+import marathon5 from '../images/cat.png'
 
 const projects = [ // перевести сайты на английский 
     {
@@ -104,12 +109,30 @@ const projects = [ // перевести сайты на английский
     },
     {
         title: 'Marathon',
-        description: '',
+        description: [
+            'Spectacular image popup',
+            'Kanban board',
+            'Beautiful image slider',
+            'Mini game without rules :D',
+            'Mini game <Catch the cat>'
+        ],
         icon: marathonmain,
-        images: [zamyatysh, zamyatysh, zamyatysh],
+        images: [marathon1, marathon2, marathon3, marathon4, marathon5],
         stack: [''],
-        github: [],
-        browser: [],
+        github: [
+            'https://github.com/DanyaLiupinin/card-gallery-marathon',
+            'https://github.com/DanyaLiupinin/canban-board-marathon',
+            'https://github.com/DanyaLiupinin/image-slider-marathon',
+            'https://github.com/DanyaLiupinin/mini-game-marathon',
+            'https://github.com/DanyaLiupinin/aim-game-marathon'
+        ],
+        browser: [
+            'https://danyaliupinin.github.io/card-gallery-marathon/',
+            'https://danyaliupinin.github.io/canban-board-marathon/',
+            'https://danyaliupinin.github.io/image-slider-marathon/',
+            'https://danyaliupinin.github.io/mini-game-marathon/',
+            'https://danyaliupinin.github.io/aim-game-marathon/'
+        ],
         id: 6,
         type: 'multi'
     },

@@ -63,12 +63,14 @@
 }
 
 .multiPopup__image-container:hover .multiPopup__button {
-    display: block;
+    display: flex;
 }
 
 .multiPopup__button {
     width: 80%;
     display: none;
+    text-align: center;
+
 }
 
 .multiPopup__button:hover {
@@ -86,19 +88,20 @@
     .multiPopup {
         padding: 50px;
     }
- }
+}
 
 @media (max-width: 400px) {
-   .multiPopup__card {
-    height: 160px;
-   }
-   .multiPopup__card-title {
-    font-size: 16px;
-   }
+    .multiPopup__card {
+        height: 160px;
+    }
+
+    .multiPopup__card-title {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 350px) {
     .multiPopup {
         padding: 40px;
     }
- }
+}
