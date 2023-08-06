@@ -22,6 +22,11 @@ const Projects = ({ projectsRef, onClickProject }) => {
         }),
     }
 
+    const clickProjectHandler = (project) => {
+        onClickProject(project)
+        window.ym(93918643,'reachGoal',`${project.analiticsName}ProjectClick`)
+    }
+
     return (
         <motion.section
             ref={projectsRef}
@@ -38,7 +43,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
                             <motion.div className='project'
                                 variants={textAnimation}
                                 custom={project.id}
-                                onClick={() => onClickProject(project)}
+                                onClick={() => clickProjectHandler(project)}
                                 key={project.id}
                             >
                                 <img className='project__image' src={project.icon} alt={`projects ${project.title}`}></img>

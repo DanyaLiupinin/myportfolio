@@ -19,11 +19,16 @@ const Contact = ({ image, text, title, link, custom }) => {
         }),
     }
 
+    const contactClickHandler = () => {
+        window.ym(93918643,'reachGoal',`${title}Click`)
+    }
+
     return (
         <motion.div
             variants={textAnimation}
             custom={custom}
             className='contact'
+            onClick={contactClickHandler}
         >
             <a className='contact__link' href={link} target="_blank" rel="noreferrer">
                 <img className='contact__image' alt={title} src={image}></img>

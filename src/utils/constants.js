@@ -61,6 +61,7 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/react-mesto-api-full/',
         id: 1,
         type: 'single',
+        analiticsName: 'mesto'
     },
     {
         title: 'movies explorer',
@@ -72,6 +73,7 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/movies-explorer-frontend',
         id: 2,
         type: 'single',
+        analiticsName: 'movies'
     },
     {
         title: 'web developer portfolio',
@@ -83,22 +85,24 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/myportfolio-react/',
         id: 3,
         type: 'single',
+        analiticsName: 'portfolio'
     },
     {
         title: 'partyshaker (in developing)',
-        description: `A service dedicated to various types of cocktails and technologies
-        for their preparation; intended both for organizers of parties, and for amateur bartenders. Developed in a team of 20 people`,
+        description: `Service for bartenders and party organizers, which gives access to the library of cocktail recipes with a flexible search system and the ability to create your own recipes. Developed in a team of 30 people. MVP in september 2023`,
         icon: partymain,
         images: [party, party2, party3],
         stack: ['React', 'Redux', 'TypeScript', 'Rest Api', 'Css variables'],
         github: 'no',
-        browser: 'https://partyshaker.online/',
+        browser: 'no',
+        browserButton: 'MVP september 2023',
         id: 4,
         type: 'single',
+        analiticsName: 'partyshaker'
     },
     {
         title: 'zamyatysh shop (in developing)',
-        description: `Online merchandise store, dedicated to a frog named Zamyatysh 𓆏`,
+        description: `Online merchandise store, dedicated to a frog named Zamyatysh :>`,
         icon: zamyatyshmain,
         images: [zamyatysh, zamyatysh2, zamyatysh3],
         stack: ['React', 'Redux', 'TypeScript', 'Scss', 'Custom cursor', 'Procreate for gifs'],
@@ -106,6 +110,7 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/zamyatysh/',
         id: 5,
         type: 'single',
+        analiticsName: 'zamyatysh'
     },
     {
         title: 'Marathon',
@@ -134,7 +139,9 @@ const projects = [ // перевести сайты на английский
             'https://danyaliupinin.github.io/aim-game-marathon/'
         ],
         id: 6,
-        type: 'multi'
+        type: 'multi',
+        analiticsName: 'marathon',
+        analiticsProjectsName: ['apex', 'canban', 'anderson', 'snake', 'aim']
     },
     {
         title: 'lonely chat',
@@ -146,6 +153,7 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/chat/',
         id: 7,
         type: 'single',
+        analiticsName: 'lonely'
     },
     {
         title: 'yandex vacancies',
@@ -157,6 +165,7 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/yandex-hackathon-justdoit/',
         id: 8,
         type: 'single',
+        analiticsName: 'yandex'
     },
     {
         title: 'russian travel',
@@ -168,6 +177,7 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/russian-travel/index.html',
         id: 9,
         type: 'single',
+        analiticsName: 'travel'
     },
     {
         title: 'how to learn',
@@ -179,6 +189,7 @@ const projects = [ // перевести сайты на английский
         browser: 'https://danyaliupinin.github.io/how-to-learn/',
         id: 10,
         type: 'single',
+        analiticsName: 'learn'
     },
 
 ]

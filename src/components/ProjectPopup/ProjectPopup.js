@@ -8,6 +8,13 @@ import closeButton from '../../images/close-button.svg'
 
 const ProjectPopup = ({ activeProject, onCloseProject }) => {
 
+    const linkClickAnalitics = (e) => {
+        if (e.target.textContent === 'GitHub') {
+            window.ym(93918643, 'reachGoal', `${activeProject.analiticsName}Github`)
+        } else {
+            window.ym(93918643, 'reachGoal', `${activeProject.analiticsName}Website`)
+        }
+    }
 
     return (
         activeProject !== null &&
@@ -35,10 +42,9 @@ const ProjectPopup = ({ activeProject, onCloseProject }) => {
                         }
                     </div>
                     <div className='projectPopup__buttons'>
-                        <a className={`projectPopup__button ${activeProject.github === 'no' ? 'projectPopup__button_disabled' : ''}`} target="_blank" rel="noopener noreferrer" href={activeProject.github}
-                            disabled={false}>
+                        <a className={`projectPopup__button ${activeProject.github === 'no' ? 'projectPopup__button_disabled' : ''}`} target="_blank" rel="noopener noreferrer" href={activeProject.github} disabled={false} onClick={linkClickAnalitics} >
                             {`${activeProject.github === 'no' ? 'no github :(' : 'GitHub'}`}</a>
-                        <a className='projectPopup__button' target="_blank" rel="noopener noreferrer" href={activeProject.browser}>Website</a>
+                        <a className={`projectPopup__button ${activeProject.browser === 'no' ? 'projectPopup__button_disabled' : ''}`} target="_blank" rel="noopener noreferrer" href={activeProject.browser} onClick={linkClickAnalitics}>{`${activeProject.github === 'no' ? activeProject.browserButton : 'Browser'}`}</a>
                     </div>
                 </div>
 
