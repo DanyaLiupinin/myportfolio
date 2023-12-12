@@ -1,0 +1,13 @@
+.filters {
+    height: 100px;
+    outline: 1px solid red;
+    margin-top: 100px;
+    max-width: 1140px;
+}
+
+.filter {
+    width: fit-content;
+    outline: 1px solid blue;
+    color: white;
+    height: 30px;
+}

@@ -50,7 +50,7 @@ import marathon3 from '../images/anderson.png'
 import marathon4 from '../images/snake.png'
 import marathon5 from '../images/cat.png'
 
-const projects = [ // перевести сайты на английский 
+const projects = [
     {
         title: 'mesto',
         description: `The project 'Mesto' is a kind of a social network, the main function of which is to share photos and rate photos of other users. Analogue of instagram`,
@@ -88,14 +88,14 @@ const projects = [ // перевести сайты на английский
         analiticsName: 'portfolio'
     },
     {
-        title: 'partyshaker (in developing)',
+        title: 'partyshaker',
         description: `Service for bartenders and party organizers, which gives access to the library of cocktail recipes with a flexible search system and the ability to create your own recipes. Developed in a team of 30 people. MVP in september 2023`,
         icon: partymain,
         images: [party, party2, party3],
         stack: ['React', 'Redux', 'TypeScript', 'Rest Api', 'Css variables'],
         github: 'no',
         browser: 'no',
-        browserButton: 'MVP september 2023',
+        browserButton: 'MVP release in 2024',
         id: 4,
         type: 'single',
         analiticsName: 'partyshaker'
@@ -107,7 +107,9 @@ const projects = [ // перевести сайты на английский
         images: [zamyatysh, zamyatysh2, zamyatysh3],
         stack: ['React', 'Redux', 'TypeScript', 'Scss', 'Custom cursor', 'Procreate for gifs'],
         github: 'https://github.com/DanyaLiupinin/zamyatysh',
-        browser: 'https://danyaliupinin.github.io/zamyatysh/',
+        /*browser: 'https://danyaliupinin.github.io/zamyatysh/',*/
+        browser: 'no',
+        browserButton: 'creating backend',
         id: 5,
         type: 'single',
         analiticsName: 'zamyatysh'
