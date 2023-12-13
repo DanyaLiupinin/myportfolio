@@ -1,4 +1,4 @@
-import { forwardRef, useState } from 'react'
+import { forwardRef, useEffect, useState } from 'react'
 
 import './Projects.css'
 
@@ -11,6 +11,7 @@ import { Filters } from '../Filters/Filters'
 const Projects = ({ projectsRef, onClickProject }) => {
 
     const [filters, setFilters] = useState([]);
+    const [visibleProjects, setVisibleProjects] = useState(projects)
 
     const textAnimation = {
         hidden: {
@@ -26,23 +27,61 @@ const Projects = ({ projectsRef, onClickProject }) => {
         }),
     }
 
+
     const clickProjectHandler = (project) => {
         onClickProject(project)
         window.ym(93918643,'reachGoal',`${project.analiticsName}ProjectClick`)
     }
 
     const onClickFilter = (clickedFilter) => {
-        console.log(clickedFilter)
-        if (!filters.includes(filters)) {
+        if (!filters.includes(clickedFilter)) {
             filters.length === 0 ?
             setFilters([clickedFilter]) :
             setFilters([...filters, clickedFilter]) 
+            
         } else {
             const updatedFilters = filters.filter((item) => item !== clickedFilter)
             setFilters(updatedFilters)
         }
 
     }
+
+
+    useEffect(() => {
+
+        console.log(filters.length)
+                if (filters.length === 0) {
+                    setVisibleProjects(projects) 
+                    return
+                };
+        
+                const filteredProjects = [];
+        
+                /*
+                for (let i = 0; i < filters.length; i++) {
+                    // zdec imeem konkretniy filter react
+                    for (let j = 0; j < projects.length; j++) {
+                        // zdes imeem konketniy proyect
+                        if (projects[j].stack.includes(filters[i])) {
+                            filteredProjects.push(projects[j]);
+                        }
+                    }
+                }*/
+
+                for (let i = 0; i < projects.length; i++) {
+                    const match = false;
+
+                    filters.map((filter) => {
+                    })
+
+                }
+
+                const sorted = filteredProjects.filter((project, index, array) => {
+                    return index === array.findIndex((t) => t.id === project.id);
+                });
+                setVisibleProjects(sorted)
+        
+            }, [filters])
 
     return (
         <motion.section
@@ -61,9 +100,9 @@ const Projects = ({ projectsRef, onClickProject }) => {
 
             <div className='projects__projects'>
                 {
-                    projects.map((project) => {
+                    visibleProjects.map((project) => {
                         return (
-                            <motion.div className='project'
+                            <div className='project'
                                 variants={textAnimation}
                                 custom={project.id}
                                 onClick={() => clickProjectHandler(project)}
@@ -72,7 +111,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
                                 <img className='project__image' src={project.icon} alt={`projects ${project.title}`}></img>
                                 <div className='project__image-hover'></div>
                                 <h3 className='project__title'>{project.title}</h3>
-                            </motion.div>
+                            </div>
                         )
                     })
                 }

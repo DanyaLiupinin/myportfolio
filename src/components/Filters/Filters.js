@@ -4,8 +4,8 @@ import Filter from './Filter/Filter';
 export const Filters = ({onClickFilter, filters}) => {
 
 const filtersName = [
-    'react',
-    'redux toolkit',
+    'React',
+    'Express',
     'typescript',
     'html',
     'css',
