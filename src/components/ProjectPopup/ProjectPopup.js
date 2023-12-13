@@ -44,7 +44,10 @@ const ProjectPopup = ({ activeProject, onCloseProject }) => {
                     <div className='projectPopup__buttons'>
                         <a className={`projectPopup__button ${activeProject.github === 'no' ? 'projectPopup__button_disabled' : ''}`} target="_blank" rel="noopener noreferrer" href={activeProject.github} disabled={false} onClick={linkClickAnalitics} >
                             {`${activeProject.github === 'no' ? 'no github :(' : 'GitHub'}`}</a>
-                        <a className={`projectPopup__button ${activeProject.browser === 'no' ? 'projectPopup__button_disabled' : ''}`} target="_blank" rel="noopener noreferrer" href={activeProject.browser} onClick={linkClickAnalitics}>{`${activeProject.github === 'no' ? activeProject.browserButton : 'Browser'}`}</a>
+
+                        <a className={`projectPopup__button ${activeProject.browser === 'no' ? 'projectPopup__button_disabled' : ''}`} target="_blank" rel="noopener noreferrer" href={activeProject.browser} onClick={linkClickAnalitics}>
+                            {`${activeProject.browser === 'no' ? activeProject.browserButton : 'Browser'}`}
+                        </a>
                     </div>
                 </div>
 
