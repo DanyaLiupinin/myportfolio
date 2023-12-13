@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import { forwardRef, useState } from 'react'
 
 import './Projects.css'
 
@@ -6,7 +6,11 @@ import { motion } from "framer-motion"
 
 import projects from '../../utils/constants'
 
+import { Filters } from '../Filters/Filters'
+
 const Projects = ({ projectsRef, onClickProject }) => {
+
+    const [filters, setFilters] = useState([]);
 
     const textAnimation = {
         hidden: {
@@ -27,6 +31,19 @@ const Projects = ({ projectsRef, onClickProject }) => {
         window.ym(93918643,'reachGoal',`${project.analiticsName}ProjectClick`)
     }
 
+    const onClickFilter = (clickedFilter) => {
+        console.log(clickedFilter)
+        if (!filters.includes(filters)) {
+            filters.length === 0 ?
+            setFilters([clickedFilter]) :
+            setFilters([...filters, clickedFilter]) 
+        } else {
+            const updatedFilters = filters.filter((item) => item !== clickedFilter)
+            setFilters(updatedFilters)
+        }
+
+    }
+
     return (
         <motion.section
             ref={projectsRef}
@@ -36,6 +53,12 @@ const Projects = ({ projectsRef, onClickProject }) => {
             className='projects'
         >
             <h3 className='projects__title'>Projects</h3>
+
+            <Filters
+                onClickFilter={onClickFilter}
+                filters={filters}
+            />
+
             <div className='projects__projects'>
                 {
                     projects.map((project) => {

@@ -37,7 +37,6 @@ const App = () => {
         <About />
         <Globe />
       </div>
-      {/*<Filters />*/}
       <Portfolio
         projectsRef={projectsRef}
       />
