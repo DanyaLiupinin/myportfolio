@@ -4,7 +4,7 @@ import './Projects.css'
 
 import { motion } from "framer-motion"
 
-import projects from '../../utils/constants'
+import {projects} from '../../utils/constants'
 
 import { Filters } from '../Filters/Filters'
 
@@ -27,7 +27,6 @@ const Projects = ({ projectsRef, onClickProject }) => {
         }),
     }
 
-
     const clickProjectHandler = (project) => {
         onClickProject(project)
         window.ym(93918643,'reachGoal',`${project.analiticsName}ProjectClick`)
@@ -43,38 +42,25 @@ const Projects = ({ projectsRef, onClickProject }) => {
             const updatedFilters = filters.filter((item) => item !== clickedFilter)
             setFilters(updatedFilters)
         }
-
     }
 
-
     useEffect(() => {
-
-        console.log(filters.length)
-
                 if (filters.length === 0) {
                     setVisibleProjects(projects) 
                     return
                 };
-        
                 const filteredProjects = [];
-
                 for (let i = 0; i < projects.length; i++) {
                     let match = true;
                     for (let f = 0; f < filters.length; f++) {
-                        if (!projects[i].stack.includes(filters[f])) {
-                            console.log('net')
+                        if (!projects[i].stack.map(s => s.toLowerCase()).includes(filters[f].toLowerCase())) {
                             match = false;
                             break
                         }
-                        console.log('est')
                     }
                     if (match) filteredProjects.push(projects[i]);
                 }
-
-                console.log(filteredProjects)
-
                 setVisibleProjects(filteredProjects)
-        
             }, [filters])
 
     return (

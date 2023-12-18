@@ -50,7 +50,7 @@ import marathon3 from '../images/anderson.png'
 import marathon4 from '../images/snake.png'
 import marathon5 from '../images/cat.png'
 
-const projects = [
+export const projects = [
     {
         title: 'mesto',
         description: `The project 'Mesto' is a kind of a social network, the main function of which is to share photos and rate photos of other users. Analogue of instagram`,
@@ -125,7 +125,7 @@ const projects = [
         ],
         icon: marathonmain,
         images: [marathon1, marathon2, marathon3, marathon4, marathon5],
-        stack: [''],
+        stack: ['VanillaJS'],
         github: [
             'https://github.com/DanyaLiupinin/card-gallery-marathon',
             'https://github.com/DanyaLiupinin/canban-board-marathon',
@@ -195,5 +195,3 @@ const projects = [
     },
 
 ]
-
-export default projects
