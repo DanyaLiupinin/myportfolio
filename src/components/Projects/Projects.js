@@ -50,36 +50,30 @@ const Projects = ({ projectsRef, onClickProject }) => {
     useEffect(() => {
 
         console.log(filters.length)
+
                 if (filters.length === 0) {
                     setVisibleProjects(projects) 
                     return
                 };
         
                 const filteredProjects = [];
-        
-                /*
-                for (let i = 0; i < filters.length; i++) {
-                    // zdec imeem konkretniy filter react
-                    for (let j = 0; j < projects.length; j++) {
-                        // zdes imeem konketniy proyect
-                        if (projects[j].stack.includes(filters[i])) {
-                            filteredProjects.push(projects[j]);
-                        }
-                    }
-                }*/
 
                 for (let i = 0; i < projects.length; i++) {
-                    const match = false;
-
-                    filters.map((filter) => {
-                    })
-
+                    let match = true;
+                    for (let f = 0; f < filters.length; f++) {
+                        if (!projects[i].stack.includes(filters[f])) {
+                            console.log('net')
+                            match = false;
+                            break
+                        }
+                        console.log('est')
+                    }
+                    if (match) filteredProjects.push(projects[i]);
                 }
 
-                const sorted = filteredProjects.filter((project, index, array) => {
-                    return index === array.findIndex((t) => t.id === project.id);
-                });
-                setVisibleProjects(sorted)
+                console.log(filteredProjects)
+
+                setVisibleProjects(filteredProjects)
         
             }, [filters])
 
