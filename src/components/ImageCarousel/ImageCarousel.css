@@ -41,7 +41,7 @@
 }
 
 .imageCarousel__slider-button_type_left:hover {
-    left: -35px;
+   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .imageCarousel__slider-button_type_right {
@@ -50,7 +50,7 @@
 }
 
 .imageCarousel__slider-button_type_right:hover {
-    right: -35px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .imageCarousel__slider {

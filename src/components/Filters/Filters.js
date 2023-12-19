@@ -1,30 +1,15 @@
 import './Filters.css';
 import Filter from './Filter/Filter';
+import { techFilters } from '../../utils/constants';
 
 export const Filters = ({onClickFilter, filters}) => {
 
-const filtersName = [
-    'React',
-    'Express',
-    'typescript',
-    'html',
-    'css',
-    '123',
-    '234',
-    '345',
-    '456',
-    '45',
-    '66',
-    '678'
-]
-
 return (
     <section className='filters__section' >
-        <p className='filters__text'>Filter by</p>
         <div className='filters'>
-
+        <p className='filters__text'>I'm looking for: </p>
         {
-            filtersName.map((filterName, index) => {
+            techFilters.map((filterName, index) => {
                 return (
                     <Filter 
                         title={filterName}

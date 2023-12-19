@@ -83,6 +83,12 @@
     text-align: center;
   }
 
+  .projects__not-found {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+  }
+
    .project:hover .project__title {
     opacity: 1;
   }

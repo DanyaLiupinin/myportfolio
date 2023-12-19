@@ -79,7 +79,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
             />
 
             <div className='projects__projects'>
-                {
+                { visibleProjects && visibleProjects?.length > 0 ?
                     visibleProjects.map((project) => {
                         return (
                             <div className='project'
@@ -93,7 +93,10 @@ const Projects = ({ projectsRef, onClickProject }) => {
                                 <h3 className='project__title'>{project.title}</h3>
                             </div>
                         )
-                    })
+                    }) :
+                    <div className='projects__not-found'>
+                        <p>No projects found :c</p>
+                    </div>
                 }
             </div>
         </motion.section>
