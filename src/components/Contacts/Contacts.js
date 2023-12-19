@@ -15,13 +15,13 @@ const contacts = [
     {
         title: 'email',
         image: mail,
-        text: 'mr.kovan_2002 @mail.ru',
-        link: 'mailto:mr.kovan_2002@mail.ru'
+        text: 'dankooj @gmail.com',
+        link: 'mailto:dankooj@gmail.com'
     },
     {
         title: 'telegram',
         image: telegram,
-        text: 'r_b_n_m',
+        text: '@r_b_n_m',
         link: 'https://t.me/r_b_n_m'
     },
     {
@@ -71,7 +71,7 @@ const Contacts = ({ contactRef }) => {
                 <motion.p 
                 variants={textAnimation}
                 custom={.3}
-                className='contacts__data'>Current location: <span className='contacts__data-span'> Barcelona, Spain </span> <br /> (work permite since autumn 2023)</motion.p>
+                className='contacts__data'>Current location: <span className='contacts__data-span'> Barcelona, Spain </span> <br /> </motion.p>
                 <motion.p 
                 variants={textAnimation}
                 custom={.7}
