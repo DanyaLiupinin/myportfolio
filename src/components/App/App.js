@@ -19,6 +19,13 @@ const App = () => {
 
   const [activeProject, setActiveProject] = useState({});
 
+  const setActiveProjectHandler = (project) =>  {
+    console.log(window.scrollY)
+    console.log(project)
+    
+    setActiveProject(project)
+  }
+
   useEffect(() => {
     moviesFetch()
     mestoFetch()
@@ -30,7 +37,7 @@ const App = () => {
     <div className='app'>
       <Routes>
 
-        <Route path='/' element={<Main setActiveProject={setActiveProject} />} />
+        <Route path='/' element={<Main setActiveProject={setActiveProjectHandler} />} />
         <Route path='/:id' element={<ProjectPopup activeProject={activeProject} />} />
 
       </Routes>
