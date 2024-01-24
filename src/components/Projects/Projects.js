@@ -4,9 +4,10 @@ import './Projects.css'
 
 import { motion } from "framer-motion"
 
-import {projects} from '../../utils/constants'
+import { projects } from '../../utils/constants'
 
 import { Filters } from '../Filters/Filters'
+import { Link } from 'react-router-dom'
 
 const Projects = ({ projectsRef, onClickProject }) => {
 
@@ -29,15 +30,15 @@ const Projects = ({ projectsRef, onClickProject }) => {
 
     const clickProjectHandler = (project) => {
         onClickProject(project)
-        window.ym(93918643,'reachGoal',`${project.analiticsName}ProjectClick`)
+        window.ym(93918643, 'reachGoal', `${project.analiticsName}ProjectClick`)
     }
 
     const onClickFilter = (clickedFilter) => {
         if (!filters.includes(clickedFilter)) {
             filters.length === 0 ?
-            setFilters([clickedFilter]) :
-            setFilters([...filters, clickedFilter]) 
-            
+                setFilters([clickedFilter]) :
+                setFilters([...filters, clickedFilter])
+
         } else {
             const updatedFilters = filters.filter((item) => item !== clickedFilter)
             setFilters(updatedFilters)
@@ -45,23 +46,23 @@ const Projects = ({ projectsRef, onClickProject }) => {
     }
 
     useEffect(() => {
-                if (filters.length === 0) {
-                    setVisibleProjects(projects) 
-                    return
-                };
-                const filteredProjects = [];
-                for (let i = 0; i < projects.length; i++) {
-                    let match = true;
-                    for (let f = 0; f < filters.length; f++) {
-                        if (!projects[i].stack.map(s => s.toLowerCase()).includes(filters[f].toLowerCase())) {
-                            match = false;
-                            break
-                        }
-                    }
-                    if (match) filteredProjects.push(projects[i]);
+        if (filters.length === 0) {
+            setVisibleProjects(projects)
+            return
+        };
+        const filteredProjects = [];
+        for (let i = 0; i < projects.length; i++) {
+            let match = true;
+            for (let f = 0; f < filters.length; f++) {
+                if (!projects[i].stack.map(s => s.toLowerCase()).includes(filters[f].toLowerCase())) {
+                    match = false;
+                    break
                 }
-                setVisibleProjects(filteredProjects)
-            }, [filters])
+            }
+            if (match) filteredProjects.push(projects[i]);
+        }
+        setVisibleProjects(filteredProjects)
+    }, [filters])
 
     return (
         <motion.section
@@ -79,19 +80,21 @@ const Projects = ({ projectsRef, onClickProject }) => {
             />
 
             <div className='projects__projects'>
-                { visibleProjects && visibleProjects?.length > 0 ?
+                {visibleProjects && visibleProjects?.length > 0 ?
                     visibleProjects.map((project) => {
                         return (
-                            <div className='project'
-                                variants={textAnimation}
-                                custom={project.id}
-                                onClick={() => clickProjectHandler(project)}
-                                key={project.id}
-                            >
-                                <img className='project__image' src={project.icon} alt={`projects ${project.title}`}></img>
-                                <div className='project__image-hover'></div>
-                                <h3 className='project__title'>{project.title}</h3>
-                            </div>
+                            <Link to={`${project.id}`}>
+                                <div className='project'
+                                    variants={textAnimation}
+                                    custom={project.id}
+                                    onClick={() => clickProjectHandler(project)}
+                                    key={project.id}
+                                >
+                                    <img className='project__image' src={project.icon} alt={`projects ${project.title}`}></img>
+                                    <div className='project__image-hover'></div>
+                                    <h3 className='project__title'>{project.title}</h3>
+                                </div>
+                            </Link>
                         )
                     }) :
                     <div className='projects__not-found'>

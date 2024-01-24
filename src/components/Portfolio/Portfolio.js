@@ -6,15 +6,16 @@ import Projects from '../Projects/Projects'
 import ProjectPopup from '../ProjectPopup/ProjectPopup'
 import MultiProjectPopup from '../MultiProjectsPopup/MultiProjectsPopup'
 
-const Portfolio = ({ projectsRef }) => {
+const Portfolio = ({ projectsRef, setActiveProject }) => {
 
   const [activeSinglePopup, setActiveSinglePopup] = useState(null)
   const [activeMultiPopup, setActiveMultiPopup] = useState(null)
 
   const onClickProject = (projectData) => {
-    projectData.type === 'single' ?
-      setActiveSinglePopup(projectData) :
-      setActiveMultiPopup(projectData)
+    setActiveProject(projectData);
+    //projectData.type === 'single' ?
+      //setActiveSinglePopup(projectData) :
+      //setActiveMultiPopup(projectData)
   }
 
   const onCloseProject = () => {

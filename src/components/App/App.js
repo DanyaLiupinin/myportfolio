@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRef, useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 
 import Header from '../Header/Header'
@@ -9,43 +10,32 @@ import Portfolio from '../Portfolio/Portfolio';
 import Stack from '../Stack/Stack'
 import Contacts from '../Contacts/Contacts'
 import { Filters } from '../Filters/Filters'
+import Main from '../Main/Main'
+import ProjectPopup from '../ProjectPopup/ProjectPopup'
 
 import { moviesFetch, mestoFetch } from '../../utils/fetch'
 
 const App = () => {
 
-  const projectsRef = useRef(null)
-  const stackRef = useRef(null)
-  const contactRef = useRef(null)
-
-  const refs = {
-    projectsRef, stackRef, contactRef
-  }
+  const [activeProject, setActiveProject] = useState({});
 
   useEffect(() => {
     moviesFetch()
     mestoFetch()
   }, [])
 
+  console.log(activeProject)
+
   return (
     <div className='app'>
+      <Routes>
 
-      <Header
-        refs={refs}
-      />
-      <div className='main' >
-        <About />
-        <Globe />
-      </div>
-      <Portfolio
-        projectsRef={projectsRef}
-      />
-      <Stack
-        stackRef={stackRef}
-      />
-      <Contacts
-        contactRef={contactRef}
-      />
+        <Route path='/' element={<Main setActiveProject={setActiveProject} />} />
+        <Route path='/:id' element={<ProjectPopup activeProject={activeProject} />} />
+
+      </Routes>
+
+
 
     </div>
   )

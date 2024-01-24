@@ -9,10 +9,8 @@ import icon from './images/favicon/favicon-32x32.png'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HashRouter>
-    <React.StrictMode>
       <Favicon url={icon} />
       <App />
-    </React.StrictMode>
   </HashRouter>
 );
 
