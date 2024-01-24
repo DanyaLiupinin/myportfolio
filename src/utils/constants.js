@@ -34,7 +34,6 @@ import yandex2 from '../images/yandex2.png'
 import yandex3 from '../images/yandex3.png'
 
 import travelmain from '../images/travelmain.png'
-import travel from '../images/travel.png'
 import travel2 from '../images/travel2.png'
 import travel3 from '../images/travel3.png'
 
@@ -50,6 +49,11 @@ import marathon3 from '../images/anderson.png'
 import marathon4 from '../images/snake.png'
 import marathon5 from '../images/cat.png'
 
+import lavkamain from '../images/lavkamain.png';
+import lavka from '../images/lavka.png';
+import lavka2 from '../images/lavka2.png';
+import lavka3 from '../images/lavka3.png';
+
 export const projects = [
     {
         title: 'mesto',
@@ -60,7 +64,7 @@ export const projects = [
         github: 'https://github.com/DanyaLiupinin/react-mesto-api-full',
         browser: 'https://danyaliupinin.github.io/react-mesto-api-full/',
         id: 1,
-        type: 'single',
+        type: 'default',
         analiticsName: 'mesto'
     },
     {
@@ -72,33 +76,33 @@ export const projects = [
         github: 'https://github.com/DanyaLiupinin/movies-explorer-frontend',
         browser: 'https://danyaliupinin.github.io/movies-explorer-frontend',
         id: 2,
-        type: 'single',
+        type: 'default',
         analiticsName: 'movies'
-    },
-    {
-        title: 'web developer portfolio',
-        description: `Landing page with a presentation of my professional skills, which contains all my completed projects`,
-        icon: portfoliomain,
-        images: [portfolio, portfolio2, portfolio3],
-        stack: ['React', 'Functional components', 'Addaptive', 'Vanta library', 'Motion framer library'],
-        github: 'https://github.com/DanyaLiupinin/myportfolio-react',
-        browser: 'https://danyaliupinin.github.io/myportfolio-react/',
-        id: 3,
-        type: 'single',
-        analiticsName: 'portfolio'
     },
     {
         title: 'partyshaker',
         description: `Service for bartenders and party organizers, which gives access to the library of cocktail recipes with a flexible search system and the ability to create your own recipes. Developed in a team of 30 people. MVP in september 2023`,
         icon: partymain,
         images: [party, party2, party3],
-        stack: ['React', 'Redux', 'TypeScript', 'Axios', 'Rest Api', 'Css modules', 'Addaptive', 'Redux thunk'],
+        stack: ['React', 'React query', 'Redux toolkit', 'TypeScript', 'Axios', 'Rest Api', 'Css modules', 'Addaptive', 'FSD architecture'],
         github: 'no',
         browser: 'no',
         browserButton: 'MVP release in 2024',
-        id: 4,
-        type: 'single',
+        id: 3,
+        type: 'default',
         analiticsName: 'partyshaker'
+    },
+    {
+        title: 'justkavka telegram marketplace',
+        description: `justlavka bot`,
+        icon: lavkamain,
+        images: [lavka, lavka2, lavka3],
+        stack: ['React', 'React query', 'Redux toolkit', 'TypeScript', 'Axios', 'Rest Api', 'Css modules', 'Addaptive', 'FSD architecture'],
+        github: 'no',
+        browser: 'https://t.me/justlavkabot',
+        id: 4,
+        type: 'default',
+        analiticsName: 'justlavka'
     },
     {
         title: 'zamyatysh shop (backend in developing)',
@@ -111,8 +115,32 @@ export const projects = [
         browser: 'no',
         browserButton: 'creating backend',
         id: 5,
-        type: 'single',
+        type: 'default',
         analiticsName: 'zamyatysh'
+    },
+     {
+        title: 'web developer portfolio',
+        description: `Landing page with a presentation of my professional skills, which contains all my completed projects`,
+        icon: portfoliomain,
+        images: [portfolio, portfolio2, portfolio3],
+        stack: ['React', 'Functional components', 'Addaptive', 'Vanta library', 'Motion framer library'],
+        github: 'https://github.com/DanyaLiupinin/myportfolio-react',
+        browser: 'https://danyaliupinin.github.io/myportfolio-react/',
+        id: 6,
+        type: 'default',
+        analiticsName: 'portfolio'
+    },
+    {
+        title: 'lonely chat',
+        description: `'Lonely chat' is a service for people who have no one to talk to. Thanks to the 'chat', a person can communicate with himself using different browser tabs.`,
+        icon: chatmain,
+        images: [chat, chat2, chat3],
+        stack: ['React', 'Local storage', 'Session storage', 'Addaptive'],
+        github: 'https://github.com/DanyaLiupinin/chat',
+        browser: 'https://danyaliupinin.github.io/chat/',
+        id: 7,
+        type: 'default',
+        analiticsName: 'lonely'
     },
     {
         title: 'Marathon',
@@ -140,22 +168,10 @@ export const projects = [
             'https://danyaliupinin.github.io/mini-game-marathon/',
             'https://danyaliupinin.github.io/aim-game-marathon/'
         ],
-        id: 6,
-        type: 'multi',
+        id: 8,
+        type: 'marathon',
         analiticsName: 'marathon',
         analiticsProjectsName: ['apex', 'canban', 'anderson', 'snake', 'aim']
-    },
-    {
-        title: 'lonely chat',
-        description: `'Lonely chat' is a service for people who have no one to talk to. Thanks to the 'chat', a person can communicate with himself using different browser tabs.`,
-        icon: chatmain,
-        images: [chat, chat2, chat3],
-        stack: ['React', 'Local storage', 'Session storage', 'Addaptive'],
-        github: 'https://github.com/DanyaLiupinin/chat',
-        browser: 'https://danyaliupinin.github.io/chat/',
-        id: 7,
-        type: 'single',
-        analiticsName: 'lonely'
     },
     {
         title: 'yandex vacancies',
@@ -165,8 +181,8 @@ export const projects = [
         stack: ['VanillaJS', 'HTML5', 'CSS3', 'Bulma', 'Css animations'],
         github: 'https://github.com/DanyaLiupinin/yandex-hackathon-justdoit',
         browser: 'https://danyaliupinin.github.io/yandex-hackathon-justdoit/',
-        id: 8,
-        type: 'single',
+        id: 9,
+        type: 'default',
         analiticsName: 'yandex'
     },
     {
@@ -177,8 +193,8 @@ export const projects = [
         stack: ['VanillaJS', 'HTML3', 'CSS3', 'Addaptive', 'BEM'],
         github: 'https://github.com/DanyaLiupinin/russian-travel',
         browser: 'https://danyaliupinin.github.io/russian-travel/index.html',
-        id: 9,
-        type: 'single',
+        id: 10,
+        type: 'default',
         analiticsName: 'travel'
     },
     {
@@ -189,8 +205,8 @@ export const projects = [
         stack: ['VanillaJS', 'HTML5', 'CSS3', 'Addaptive', 'BEM'],
         github: 'https://github.com/DanyaLiupinin/how-to-learn',
         browser: 'https://danyaliupinin.github.io/how-to-learn/',
-        id: 10,
-        type: 'single',
+        id: 11,
+        type: 'default',
         analiticsName: 'learn'
     },
 

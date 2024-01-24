@@ -4,17 +4,16 @@ import Globe from "../Globe/Globe"
 import Portfolio from '../Portfolio/Portfolio';
 import Stack from '../Stack/Stack'
 import Contacts from '../Contacts/Contacts'
-import { Filters } from '../Filters/Filters'
 import { useRef } from 'react';
 
-const Main = ({setActiveProject}) => {
+const Main = () => {
 
     const projectsRef = useRef(null)
     const stackRef = useRef(null)
     const contactRef = useRef(null)
-  
+
     const refs = {
-      projectsRef, stackRef, contactRef
+        projectsRef, stackRef, contactRef
     }
 
     return (
@@ -27,7 +26,6 @@ const Main = ({setActiveProject}) => {
                 <Globe />
             </div>
             <Portfolio
-            setActiveProject={setActiveProject}
                 projectsRef={projectsRef}
             />
             <Stack

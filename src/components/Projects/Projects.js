@@ -9,7 +9,7 @@ import { projects } from '../../utils/constants'
 import { Filters } from '../Filters/Filters'
 import { Link } from 'react-router-dom'
 
-const Projects = ({ projectsRef, onClickProject }) => {
+const Projects = ({ projectsRef }) => {
 
     const [filters, setFilters] = useState([]);
     const [visibleProjects, setVisibleProjects] = useState(projects)
@@ -29,7 +29,6 @@ const Projects = ({ projectsRef, onClickProject }) => {
     }
 
     const clickProjectHandler = (project) => {
-        onClickProject(project)
         window.ym(93918643, 'reachGoal', `${project.analiticsName}ProjectClick`)
     }
 
@@ -46,10 +45,12 @@ const Projects = ({ projectsRef, onClickProject }) => {
     }
 
     useEffect(() => {
+
         if (filters.length === 0) {
             setVisibleProjects(projects)
             return
         };
+
         const filteredProjects = [];
         for (let i = 0; i < projects.length; i++) {
             let match = true;
@@ -61,6 +62,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
             }
             if (match) filteredProjects.push(projects[i]);
         }
+        
         setVisibleProjects(filteredProjects)
     }, [filters])
 
@@ -83,7 +85,7 @@ const Projects = ({ projectsRef, onClickProject }) => {
                 {visibleProjects && visibleProjects?.length > 0 ?
                     visibleProjects.map((project) => {
                         return (
-                            <Link to={`${project.id}`}>
+                            <Link to={`projects/${project.analiticsName}`}>
                                 <div className='project'
                                     variants={textAnimation}
                                     custom={project.id}

@@ -1,0 +1,23 @@
+
+.projectPopup__close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: unset;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+    outline: 2px solid white;
+    border-radius: 5px;
+}
+
+.projectPopup__close-button:hover {
+    opacity: .7;
+}
+
+.projectPopup__close-button-image {
+    width: 100%;
+    height: 100%;
+}
