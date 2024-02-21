@@ -80,45 +80,43 @@ export const projects = [
         analiticsName: 'movies'
     },
     {
+        title: 'zamy shop',
+        description: `Online merchandise store, dedicated to a frog named Zamy :>`,
+        icon: zamyatyshmain,
+        images: [zamyatysh, zamyatysh2, zamyatysh3],
+        stack: ['React', 'Redux', 'TypeScript', 'Axios', 'Scss', 'Addaptive', 'Feature sliced architecture', 'Craco', 'Radix', 'Procreate for gifs'],
+        github: 'https://github.com/DanyaLiupinin/zamyatysh',
+        browser: 'https://danyaliupinin.github.io/zamyatysh/',
+        id: 3,
+        type: 'default',
+        analiticsName: 'zamyatysh'
+    },
+    {
         title: 'partyshaker',
-        description: `Service for bartenders and party organizers, which gives access to the library of cocktail recipes with a flexible search system and the ability to create your own recipes. Developed in a team of 30 people. MVP in september 2023`,
+        description: `Service for bartenders and party organizers, which gives access to the library of cocktail recipes with a flexible search system and the ability to create your own recipes. Developed in a large team. Production in 2024`,
         icon: partymain,
         images: [party, party2, party3],
-        stack: ['React', 'React query', 'Redux toolkit', 'TypeScript', 'Axios', 'Rest Api', 'Css modules', 'Addaptive', 'FSD architecture'],
+        stack: ['React', 'React query', 'Redux', 'TypeScript', 'Axios', 'Vite', 'Css modules', 'Tailwind', 'Addaptive', 'FSD architecture', 'Radix'],
         github: 'no',
         browser: 'no',
         browserButton: 'MVP release in 2024',
-        id: 3,
+        id: 4,
         type: 'default',
         analiticsName: 'partyshaker'
     },
     {
-        title: 'justkavka telegram marketplace',
-        description: `justlavka bot`,
+        title: 'telegram marketplace',
+        description: `crypto marketplace for the sale of digital goods`,
         icon: lavkamain,
         images: [lavka, lavka2, lavka3],
-        stack: ['React', 'React query', 'Redux toolkit', 'TypeScript', 'Axios', 'Rest Api', 'Css modules', 'Addaptive', 'FSD architecture'],
+        stack: ['React', 'React query', 'Redux', 'TypeScript', 'Axios', 'Rest Api', 'Css modules', 'Tailwind', 'Addaptive', 'FSD architecture'],
         github: 'no',
         browser: 'https://t.me/justlavkabot',
-        id: 4,
+        id: 5,
         type: 'default',
         analiticsName: 'justlavka'
     },
     {
-        title: 'zamyatysh shop (backend in developing)',
-        description: `Online merchandise store, dedicated to a frog named Zamyatysh :>`,
-        icon: zamyatyshmain,
-        images: [zamyatysh, zamyatysh2, zamyatysh3],
-        stack: ['React', 'Redux', 'TypeScript', 'Axios', 'Scss', 'Addaptive', 'Custom cursor', 'Procreate for gifs'],
-        github: 'https://github.com/DanyaLiupinin/zamyatysh',
-        /*browser: 'https://danyaliupinin.github.io/zamyatysh/',*/
-        browser: 'no',
-        browserButton: 'creating backend',
-        id: 5,
-        type: 'default',
-        analiticsName: 'zamyatysh'
-    },
-     {
         title: 'web developer portfolio',
         description: `Landing page with a presentation of my professional skills, which contains all my completed projects`,
         icon: portfoliomain,
@@ -212,14 +210,21 @@ export const projects = [
 
 ]
 
-export const techFilters = [
+export const frontFilters = [
     'React',
     'TypeScript',
     'Redux',
     'VanillaJS',
     'Addaptive',
+    'RestAPI',
+    'Scss',
+    'Tailwind',
+    'Radix'
+]
+
+export const backFilters = [
     'NodeJS',
+    'Express',
     'MongoDB',
-    'RestAPI', 
-    'Scss'
-];
+]
+

@@ -3,10 +3,20 @@
     max-width: 1720px;
 }
 
+.filters__section p {
+    color: white;
+    width: 100%;
+}
+
 .filters__text {
     color: white;
     font-size: 30px;
     margin: 0;
+}
+
+.filters__block-name:first-child {
+    font-size: 20px;
+    color: rgb(210, 48, 210) !important;
 }
 
 .filters {
@@ -16,4 +26,15 @@
     margin-top: 50px;
 }
 
+.filters__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
 
+.filters__block {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
