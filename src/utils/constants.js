@@ -92,17 +92,17 @@ export const projects = [
         analiticsName: 'zamyatysh'
     },
     {
-        title: 'partyshaker',
+        title: 'pshaker',
         description: `Service for bartenders and party organizers, which gives access to the library of cocktail recipes with a flexible search system and the ability to create your own recipes. Developed in a large team. Production in 2024`,
         icon: partymain,
         images: [party, party2, party3],
-        stack: ['React', 'React query', 'Redux', 'TypeScript', 'RestAPI', 'Axios', 'Vite', 'Css modules', 'Tailwind', 'Addaptive', 'FSD architecture', 'Radix'],
+        stack: ['React', 'React query', 'Redux', 'TypeScript', 'RestAPI', 'Axios', 'Vite', 'Css modules', 'Tailwind', 'Addaptive', 'FSD architecture', 'Radix', 'Storybook'],
         github: 'no',
         browser: 'no',
         browserButton: 'MVP release in 2024',
         id: 4,
         type: 'default',
-        analiticsName: 'partyshaker'
+        analiticsName: 'pshaker'
     },
     {
         title: 'telegram marketplace',
